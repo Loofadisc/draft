@@ -41,7 +41,7 @@ class Human extends Player
   sendPack: ->
     pack = @packs.0
 
-    @time = 20 + pack.length * 5
+    @time = 20 + pack.length * 10
 
     if @dropped or pack.length is 1
       process.nextTick @~autopick
